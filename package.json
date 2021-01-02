@@ -1,0 +1,31 @@
+{
+  "name": "easy_pact_jest_contract_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "consumer": "node src/consumerService.js",
+    "test:consumer": "jest __tests__/contract/consumer --runInBand --setupFiles ./__tests__/helpers/pactSetup.js --setupTestFrameworkScriptFile=./__tests__/helpers/pactTestWrapper.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kruczyna/easy_pact_jest_contract_test.git"
+  },
+  "keywords": [],
+  "author": "Victoria Kruczek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kruczyna/easy_pact_jest_contract_test/issues"
+  },
+  "homepage": "https://github.com/kruczyna/easy_pact_jest_contract_test#readme",
+  "devDependencies": {
+    "@pact-foundation/pact": "^9.7.0",
+    "axios": "^0.19.0",
+    "eslint": "^6.8.0",
+    "express": "^4.17.1",
+    "jest": "^25.1.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
