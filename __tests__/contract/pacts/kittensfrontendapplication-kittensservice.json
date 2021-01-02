@@ -39,6 +39,30 @@
           }
         ]
       }
+    },
+    {
+      "description": "get kitten with specific id",
+      "providerState": "i have a list of kittens",
+      "request": {
+        "method": "GET",
+        "path": "/kittens/1",
+        "headers": {
+          "Accept": "application/json, text/plain, */*"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": [
+          {
+            "id": 1,
+            "name": "Zepsuszek",
+            "furColor": "black and white"
+          }
+        ]
+      }
     }
   ],
   "metadata": {
