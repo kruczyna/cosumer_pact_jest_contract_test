@@ -2,21 +2,11 @@
 
 const { Matchers } = require("@pact-foundation/pact")
 const { getKittens } = require("../../../src/consumer")
+const availableKittens = require("../../../src/kittenData.js")
 
 
 describe("Clients Service", () => {
-    const GET_EXPECTED_BODY = [{
-        "id": 1,
-        "kittenName": "Zepsuszek",
-        "furColor": "White and black",
-        "age": 8,
-    },
-    {
-        "id": 2,
-        "kittenName": "Bubbles",
-        "furColor": "Ginger",
-        "age": 11,
-    }]
+    const GET_EXPECTED_BODY = availableKittens
 
     afterEach(() => provider.verify())
 
@@ -37,7 +27,7 @@ describe("Clients Service", () => {
                     headers: {
                         "Content-Type": "application/json; charset=utf-8",
                     },
-                    body: GET_EXPECTED_BODY,
+                    body: availableKittens,
                 },
             }
             return provider.addInteraction(interaction)

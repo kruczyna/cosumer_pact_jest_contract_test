@@ -1,0 +1,49 @@
+{
+  "consumer": {
+    "name": "kittensFrontendApplication"
+  },
+  "provider": {
+    "name": "kittensService"
+  },
+  "interactions": [
+    {
+      "description": "get all available kittens",
+      "providerState": "i have a list of kittens",
+      "request": {
+        "method": "GET",
+        "path": "/kittens",
+        "headers": {
+          "Accept": "application/json, text/plain, */*"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": [
+          {
+            "id": 1,
+            "name": "Zepsuszek",
+            "furColor": "black and white"
+          },
+          {
+            "id": 2,
+            "name": "Bubbles",
+            "furColor": "ginger"
+          },
+          {
+            "id": 3,
+            "name": "Tati",
+            "furColor": "black"
+          }
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
