@@ -1,5 +1,5 @@
-I, [2021-01-02T18:49:44.736386 #24142]  INFO -- : Registered expected interaction GET /kittens
-D, [2021-01-02T18:49:44.736712 #24142] DEBUG -- : {
+I, [2021-01-13T13:13:16.895177 #25326]  INFO -- : Registered expected interaction GET /kittens
+D, [2021-01-13T13:13:16.895434 #25326] DEBUG -- : {
   "description": "get all available kittens",
   "providerState": "i have a list of kittens",
   "request": {
@@ -34,21 +34,21 @@ D, [2021-01-02T18:49:44.736712 #24142] DEBUG -- : {
   },
   "metadata": null
 }
-I, [2021-01-02T18:49:44.745549 #24142]  INFO -- : Received request GET /kittens
-D, [2021-01-02T18:49:44.745666 #24142] DEBUG -- : {
+I, [2021-01-13T13:13:16.901831 #25326]  INFO -- : Received request GET /kittens
+D, [2021-01-13T13:13:16.901927 #25326] DEBUG -- : {
   "path": "/kittens",
   "query": "",
   "method": "get",
   "headers": {
     "Accept": "application/json, text/plain, */*",
     "User-Agent": "axios/0.19.2",
-    "Host": "localhost:8081",
+    "Host": "localhost:8088",
     "Connection": "close",
     "Version": "HTTP/1.1"
   }
 }
-I, [2021-01-02T18:49:44.745982 #24142]  INFO -- : Found matching response for GET /kittens
-D, [2021-01-02T18:49:44.746089 #24142] DEBUG -- : {
+I, [2021-01-13T13:13:16.902201 #25326]  INFO -- : Found matching response for GET /kittens
+D, [2021-01-13T13:13:16.902275 #25326] DEBUG -- : {
   "status": 200,
   "headers": {
     "Content-Type": "application/json; charset=utf-8"
@@ -71,10 +71,10 @@ D, [2021-01-02T18:49:44.746089 #24142] DEBUG -- : {
     }
   ]
 }
-I, [2021-01-02T18:49:44.753461 #24142]  INFO -- : Verifying - interactions matched
-I, [2021-01-02T18:49:44.756766 #24142]  INFO -- : Cleared interactions
-I, [2021-01-02T18:49:44.761092 #24142]  INFO -- : Registered expected interaction GET /kittens/1
-D, [2021-01-02T18:49:44.761203 #24142] DEBUG -- : {
+I, [2021-01-13T13:13:16.907982 #25326]  INFO -- : Verifying - interactions matched
+I, [2021-01-13T13:13:16.911159 #25326]  INFO -- : Cleared interactions
+I, [2021-01-13T13:13:16.915660 #25326]  INFO -- : Registered expected interaction GET /kittens/1
+D, [2021-01-13T13:13:16.915789 #25326] DEBUG -- : {
   "description": "get kitten with specific id",
   "providerState": "i have a list of kittens",
   "request": {
@@ -99,21 +99,21 @@ D, [2021-01-02T18:49:44.761203 #24142] DEBUG -- : {
   },
   "metadata": null
 }
-I, [2021-01-02T18:49:44.764992 #24142]  INFO -- : Received request GET /kittens/1
-D, [2021-01-02T18:49:44.765090 #24142] DEBUG -- : {
+I, [2021-01-13T13:13:16.919384 #25326]  INFO -- : Received request GET /kittens/1
+D, [2021-01-13T13:13:16.919485 #25326] DEBUG -- : {
   "path": "/kittens/1",
   "query": "",
   "method": "get",
   "headers": {
     "Accept": "application/json, text/plain, */*",
     "User-Agent": "axios/0.19.2",
-    "Host": "localhost:8081",
+    "Host": "localhost:8088",
     "Connection": "close",
     "Version": "HTTP/1.1"
   }
 }
-I, [2021-01-02T18:49:44.765196 #24142]  INFO -- : Found matching response for GET /kittens/1
-D, [2021-01-02T18:49:44.765253 #24142] DEBUG -- : {
+I, [2021-01-13T13:13:16.919598 #25326]  INFO -- : Found matching response for GET /kittens/1
+D, [2021-01-13T13:13:16.919643 #25326] DEBUG -- : {
   "status": 200,
   "headers": {
     "Content-Type": "application/json; charset=utf-8"
@@ -126,6 +126,6 @@ D, [2021-01-02T18:49:44.765253 #24142] DEBUG -- : {
     }
   ]
 }
-I, [2021-01-02T18:49:44.768442 #24142]  INFO -- : Verifying - interactions matched
-I, [2021-01-02T18:49:44.771799 #24142]  INFO -- : Cleared interactions
-I, [2021-01-02T18:49:44.775096 #24142]  INFO -- : Writing pact for kittensService to /Users/victoria.kruczek/Desktop/Pact/easy_pact_jest_contract_test/__tests__/contract/pacts/kittensfrontendapplication-kittensservice.json
+I, [2021-01-13T13:13:16.923127 #25326]  INFO -- : Verifying - interactions matched
+I, [2021-01-13T13:13:16.926250 #25326]  INFO -- : Cleared interactions
+I, [2021-01-13T13:13:16.930090 #25326]  INFO -- : Writing pact for kittensService to /Users/victoria.kruczek/Desktop/Pact/cosumer_pact_jest_contract_test/__tests__/contract/pacts/kittensfrontendapplication-kittensservice.json
